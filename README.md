@@ -36,7 +36,7 @@ Database: DB Browser sqlite or install simplesqlitebrowser plugin in android stu
 
 <b>Admin Access:</b><br>
 The platform also includes login access for administrators, allowing seamless management of food, exercise, and recipes to ensure a smooth user experience.<br>
-![image](https://github.com/TheAppleDog/IntakeTracker/assets/90033417/10f76714-2ca9-433b-b14a-e964a2639ac3)
+![image](https://github.com/TheAppleDog/IntakeTracker/assets/90033417/10f76714-2ca9-433b-b14a-e964a2639ac3=300x)
 ![image](https://github.com/TheAppleDog/IntakeTracker/assets/90033417/eb8cc985-2471-4815-ba09-1c24ac012e13)
 ![image](https://github.com/TheAppleDog/IntakeTracker/assets/90033417/c8c3e95f-1ed6-476e-8ca4-4447777d63e4)
 ![image](https://github.com/TheAppleDog/IntakeTracker/assets/90033417/c7894eb7-ee10-44fe-8e14-1dd5cae4f974)
