@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:ignore="HardcodedText"
+    tools:context=".addfoodlistadmin">
+        <!-- Food Name -->
+        <EditText
+            android:id="@+id/foodNameEditText"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:hint="Food Name"
+            android:background="@drawable/border"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#2B2A2A"
+            android:textSize="20sp"
+            tools:ignore="Autofill"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/foodcalories"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:hint="Calories"
+            android:background="@drawable/border"
+            android:layout_marginTop="160dp"
+            android:layout_marginStart="30dp"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#2B2A2A"
+            android:textSize="20sp"
+            tools:ignore="Autofill"
+            android:inputType="text" />
+
+        <!-- Serving Size -->
+        <EditText
+            android:id="@+id/servingSize"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:hint="Serving Size"
+            android:background="@drawable/border"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="30dp"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#2B2A2A"
+            android:textSize="20sp"
+            tools:ignore="Autofill"
+            android:inputType="text"/>
+
+        <!-- Number of Servings -->
+<!--        <EditText-->
+<!--            android:id="@+id/numberOfServingsEditText"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="65dp"-->
+<!--            android:hint="Number of Servings"-->
+<!--            android:background="@drawable/border"-->
+<!--            android:layout_marginTop="350dp"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:padding="15dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textColorHint="#2B2A2A"-->
+<!--            android:textSize="20sp"-->
+<!--            tools:ignore="Autofill"-->
+<!--            android:inputType="number"/>-->
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="390dp"
+            android:layout_marginStart="165dp"
+            android:backgroundTint="#000000"
+            android:textColor="@color/white"
+            android:background="@drawable/border"/>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_*" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_app3_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app3_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".recipedisplay"
+            android:exported="false" />
+        <activity
+            android:name=".deleterecipes"
+            android:exported="false" />
+        <activity
+            android:name=".deleteexercise"
+            android:exported="false" />
+        <activity
+            android:name=".deletefood"
+            android:exported="false" />
+        <activity
+            android:name=".editexercise"
+            android:exported="false" />
+        <service
+            android:name=".NotificationForegroundService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="@string/common_google_play_services_notification_channel_name" />
+        <receiver
+            android:name=".RestartServiceReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="RESTART_SERVICE_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".NotificationReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="@string/common_google_play_services_notification_ticker">
+            <intent-filter>
+                <action android:name="com.example.intaketracker.NOTIFY_ACTION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.example.intaketracker.NOTIFY_CATEGORY" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".notifs"
+            android:exported="false" />
+        <activity
+            android:name=".editfood"
+            android:exported="false" />
+        <activity
+            android:name=".recipepage1"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile"
+            android:exported="false" />
+        <activity
+            android:name=".navigateto"
+            android:exported="false" />
+        <activity
+            android:name=".exercisecardview"
+            android:exported="false" />
+        <activity
+            android:name=".exerciselist"
+            android:exported="false" />
+        <activity
+            android:name=".addexerciselistadmin"
+            android:exported="false" />
+        <activity
+            android:name=".water1"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile_more"
+            android:exported="false" />
+        <activity
+            android:name=".Macro"
+            android:exported="false" />
+        <activity
+            android:name=".infobmr"
+            android:exported="false" />
+        <activity
+            android:name=".BMR"
+            android:exported="false" />
+        <activity
+            android:name=".BodyFat"
+            android:exported="false" />
+        <activity
+            android:name=".BMI"
+            android:exported="false" />
+        <activity
+            android:name=".foodcardview"
+            android:exported="false" />
+        <activity
+            android:name=".custom_list_item"
+            android:exported="false" />
+        <activity
+            android:name=".expanded"
+            android:exported="false" />
+        <activity
+            android:name=".foodlist"
+            android:exported="false" />
+        <activity
+            android:name=".addfoodlistadmin"
+            android:exported="false" />
+        <activity
+            android:name=".admin_DBHelper"
+            android:exported="false" />
+        <activity
+            android:name=".adminlogin"
+            android:exported="false" />
+        <activity
+            android:name=".cardview2"
+            android:exported="false" />
+        <activity
+            android:name=".cardview1"
+            android:exported="false" />
+        <activity
+            android:name=".customtab"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".DBHelper"
+            android:exported="false" />
+        <activity
+            android:name=".border"
+            android:exported="false" />
+        <activity
+            android:name=".userinfo"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".signup"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

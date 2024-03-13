@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:ignore="HardCodedText"
+    tools:context=".exercisecardview">
+    <TextView
+        android:id="@+id/exNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:text="Exercise Name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/defaultcolor"
+        android:layout_marginTop="64dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="69dp"
+        android:text="MET Value:"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/metTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="69dp"
+        android:padding="10dp"
+        android:text="1.0"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="123dp"
+        android:text="Sets:"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/setsTextView"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="123dp"
+        android:padding="10dp"
+        android:focusable="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:textStyle="bold"
+        tools:ignore="Autofill" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="176dp"
+        android:text="Repetitions:"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/repsTextView"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="176dp"
+        android:padding="10dp"
+        android:focusable="true"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="Autofill" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:text="Duration: (mins)"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/minsTextView"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="230dp"
+        android:padding="10dp"
+        android:focusable="true"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="Autofill" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="282dp"
+        android:text="Calories Burned:"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/caloriesburnedTextView"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="282dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="647dp"
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:soundEffectsEnabled="true"
+        android:text="Add"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="647dp"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/black"
+        android:soundEffectsEnabled="true"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:ignore="HardCodedText"
+    tools:context=".infobmr">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Daily calorie needs based on activity level"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:stretchColumns="*">
+
+        <!-- Header Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Activity Level"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="#040404"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Calorie"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="#000000"/>
+        </TableRow>
+
+        <!-- Row 1 -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Sedentary: little or no exercise"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="1,926"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <!-- Row 2 -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Exercise 1-3 times/week"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="2,207"
+                android:padding="8dp"
+                android:layout_height="47dp"
+                android:textSize="12sp"
+                android:background="@drawable/cell_border"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <!-- Row 3 -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Exercise 4-5 times/week"
+                android:padding="8dp"
+                android:layout_height="47dp"
+                android:textSize="12sp"
+                android:background="@drawable/cell_border"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="2,351"
+                android:padding="8dp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <!-- Row 4 -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Daily exercise or intense exercise 3-4 times/week"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="2,488"
+                android:padding="8dp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <!-- Row 5 -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Intense exercise 6-7 times/week"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="2,769"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                android:textSize="12sp"
+                android:layout_height="47dp"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <!-- Row 6 -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Very intense exercise daily, or physical job"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:background="@drawable/cell_border"
+                android:layout_height="47dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="3,050"
+                android:padding="8dp"
+                android:layout_height="47dp"
+                android:background="@drawable/cell_border"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                />
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="Exercise: 15-30 minutes of elevated heart rate activity.
+Intense exercise: 45-120 minutes of elevated heart rate activity.
+Very intense exercise: 2+ hours of elevated heart rate activity."
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+</RelativeLayout>

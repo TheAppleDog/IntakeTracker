@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:ignore="HardcodedText">
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg3"
+    tools:context=".recipepage1">
+    <!-- Display Selected Image -->
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+    <!-- Image Upload Button -->
+    <Button
+        android:id="@+id/imageUploadButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:onClick="onImageUploadClick"/>
+    <!-- Recipe Name EditText -->
+    <EditText
+        android:id="@+id/recipeNameEditText"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Recipe Name"
+        android:inputType="text"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:maxLines="1"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Calories EditText -->
+    <EditText
+        android:id="@+id/caloriesEditText"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Calories"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/border"
+        android:padding="8dp" />
+    <EditText
+        android:id="@+id/editTextingredients"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        android:lines="40"
+        android:hint="Ingredients"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+    android:inputType="textMultiLine"
+    android:minLines="10"
+    android:maxLines="100"
+    android:scrollbars="vertical"
+        tools:ignore="Autofill" />
+    <EditText
+        android:id="@+id/editTextdirections"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/border"
+        android:lines="40"
+        android:hint="Directions"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:minLines="10"
+        android:maxLines="100"
+        android:scrollbars="vertical" />
+    <!-- Image Upload Button -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/black"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
+</ScrollView>

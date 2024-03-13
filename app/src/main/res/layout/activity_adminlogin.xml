@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:ignore="HardcodedText"
+    tools:context=".adminlogin">
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/app123456"
+        tools:ignore="ContentDescription" />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="230dp"
+        android:id="@+id/usern"
+        android:inputType="text"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="15dp"
+        android:padding="10dp"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:textColorHint="#2B2A2A"
+        android:textSize="15sp"
+        tools:ignore="Autofill" />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="310dp"
+        android:id="@+id/pass"
+        android:background="@drawable/border"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:padding="10dp"
+        android:hint="Password (8 characters)"
+        android:textColorHint="#2B2A2A"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        tools:ignore="Autofill" />
+    <ImageView
+        android:id="@+id/eye1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_visibility_off_24"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="330dp"
+        tools:ignore="ContentDescription" />
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:id="@+id/Login"
+        android:layout_marginTop="460dp"
+        android:layout_marginStart="165dp"
+        android:textColor="@color/white"
+        android:background="@drawable/border"
+        android:text="LOGIN"
+        android:textSize="25sp"
+        android:backgroundTint="@color/black"/>
+</RelativeLayout>

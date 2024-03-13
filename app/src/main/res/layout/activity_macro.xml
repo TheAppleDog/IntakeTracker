@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:ignore="HardCodedText"
+    tools:context=".Macro">
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:hint="Age (years)"
+        android:layout_marginTop="80dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:padding="11dp"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+    <Spinner
+        android:id="@+id/spinnergender"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:spinnerMode="dropdown"
+        android:layout_toEndOf="@+id/editTextAge"
+        android:layout_marginTop="80dp" />
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:hint="Weight (kg)"
+        android:layout_marginTop="145dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:padding="11dp"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:hint="Height (cm)"
+        android:layout_marginTop="145dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/editTextWeight"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="11dp"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill" />
+    <!-- Activity Level Spinner -->
+    <Spinner
+        android:id="@+id/spinnerActivityLevel"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp" />
+    <Spinner
+        android:id="@+id/spinnergoal"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/spinnerActivityLevel"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="Calculate"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/border"
+        android:layout_below="@id/spinnergoal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_below="@id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:ignore="HardcodedText">
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText"
+    android:background="#F5F5F5"
+    tools:context=".DashboardFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome,"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/usr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="30dp"/>
+    <!-- ImageView without layout_below -->
+<!--    <ImageView-->
+<!--        android:id="@+id/notifs"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginStart="340dp"-->
+<!--        android:rotation="340"-->
+<!--        android:src="@drawable/baseline_circle_notifications_24"-->
+<!--        tools:ignore="ContentDescription" />-->
+
+    <!-- HorizontalScrollView placed directly below the ImageView -->
+    <HorizontalScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:layout_below="@id/usr"
+        android:layout_marginTop="25dp"
+        tools:ignore="NewApi"> <!-- Set this to the ImageView ID or any other view you want the HorizontalScrollView to be below -->
+
+        <!-- Rest of your layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- First CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/caloriesCardView"
+                android:layout_width="360dp"
+                android:layout_height="290dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:elevation="18dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <!-- Circular Angular Graph for Calories Intake (Custom View) -->
+                <com.example.intaketracker.CircularGraphView
+                    android:id="@+id/caloriesGraph"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    app:backgroundColor="@color/lightgreen"
+                    app:circleColor="@color/green"/>
+                <!-- Vertical Separator -->
+                <View
+                    android:id="@+id/verticalseparator"
+                    android:layout_width="2dp"
+                    android:layout_height="225dp"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#D2CFCF" />
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="180dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="205dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="215dp"
+                    android:textColor="@color/black"/>
+                <!-- Carbs Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/carbsProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="8dp"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="60dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/carbs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/carbsProgressBar"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="72dp"
+                    android:text="Carbs"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginStart="180dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="20sp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginStart="205dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                   android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="215dp"
+                    android:layout_marginTop="110dp"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                <!-- Protein Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/proteinProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/carbsProgressBar"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginEnd="40dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/protein" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/proteinProgressBar"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="152dp"
+                    android:text="Protein"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="180dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="20sp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="205dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="20sp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="215dp"
+                    android:textColor="@color/black"/>
+                <!-- Fat Progress Bar -->
+                <ProgressBar
+                    android:id="@+id/fatProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="160dp"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/proteinProgressBar"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="40dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/fat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fatProgressBar"
+                    android:layout_marginStart="180dp"
+                    android:layout_marginTop="232dp"
+                    android:text="Fat"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Second CardView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bfCardView"
+                android:layout_width="360dp"
+                android:layout_height="290dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:elevation="18dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+            <ImageView
+                android:id="@+id/bf"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/sun"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="80dp"
+                android:text="Breakfast"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/lunch"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/noon"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="242dp"
+                    android:layout_marginTop="80dp"
+                    android:text="Lunch"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/snacks"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="165dp"
+                    android:src="@drawable/snacks"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="210dp"
+                    android:text="Snacks"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/dine"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="165dp"
+                    android:src="@drawable/dinner"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="208dp"
+                    android:text="Dinner"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" />
+
+                <!-- Horizontal Separator -->
+                <View
+                    android:id="@+id/horizontalSeparator"
+                    android:layout_width="340dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="140dp"
+                    android:background="#D2CFCF" />
+                <!-- Vertical Separator -->
+                <View
+                    android:id="@+id/verticalSeparator"
+                    android:layout_width="2dp"
+                    android:layout_height="260dp"
+                    android:layout_marginStart="175dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#D2CFCF" />
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+    </HorizontalScrollView>
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/ScrollView">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ScrollView">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/exerciseCardView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:elevation="18dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/exercise"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="83dp"
+                android:text="Exercise"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+        </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/waterCardView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:elevation="18dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/water"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="83dp"
+            android:text="Water"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-365dp"
+            android:layout_marginTop="187dp"
+            android:elevation="18dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories per Day"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="19dp"/>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="35dp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+<!--    </ScrollView>-->
+</RelativeLayout>
+</ScrollView>

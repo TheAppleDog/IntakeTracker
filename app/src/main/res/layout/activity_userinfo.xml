@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg2"
+    tools:ignore="HardcodedText"
+    tools:context=".userinfo">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome,"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/usr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="20dp"/>
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/male"
+    android:layout_width="130dp"
+    android:layout_height="140dp"
+    android:layout_marginStart="60dp"
+    android:src="@drawable/male"
+    android:layout_marginTop="70dp"
+    app:civ_border_width="10dp"
+    app:civ_border_color="@color/border"
+    android:clickable="true"
+    android:focusable="true"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/female"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="220dp"
+        android:src="@drawable/female"
+        android:layout_marginTop="70dp"
+        app:civ_border_width="10dp"
+        app:civ_border_color="@color/border"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:id="@+id/age"
+        android:hint="Age"
+        android:textSize="17sp"
+        android:textColorHint="#2B2A2A"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="220dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:paddingStart="30dp"
+        android:inputType="number"
+        tools:ignore="Autofill,RtlSymmetry" />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:id="@+id/weight"
+        android:hint="Weight (in kgs)"
+        android:textSize="17sp"
+        android:textColorHint="#2B2A2A"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="300dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:paddingStart="30dp"
+        android:inputType="number"
+        tools:ignore="Autofill,RtlSymmetry" />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:id="@+id/height"
+        android:hint="Height (in cms)"
+        android:textSize="17sp"
+        android:textColorHint="#2B2A2A"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="380dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:paddingStart="30dp"
+        android:inputType="number"
+        tools:ignore="Autofill,RtlSymmetry" />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:id="@+id/cal"
+        android:hint="Kcal (per day)"
+        android:textSize="17sp"
+        android:textColorHint="#2B2A2A"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="460dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:paddingStart="30dp"
+        android:inputType="number"
+        tools:ignore="Autofill,RtlSymmetry" />
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:id="@+id/btn"
+        android:text="NEXT"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/black"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="720dp"
+        android:layout_marginStart="270dp"/>
+
+</RelativeLayout>

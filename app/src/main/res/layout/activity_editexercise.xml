@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:ignore="HardCodedText"
+    tools:context=".editexercise">
+    <!-- Wrap the content inside a CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Exercise List"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/deptSpinner"
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border">
+
+            </Spinner>
+
+            <Button
+                android:id="@+id/btnedit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border"
+                android:text="EDIT MET"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage" />
+            <EditText
+                android:id="@+id/edtDept"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btndedit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/border"
+                android:text="Edit"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

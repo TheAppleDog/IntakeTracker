@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:ignore="HardCodedText"
+    tools:context=".water1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1L per Bottle"
+    android:textSize="20sp"
+    android:layout_marginStart="20dp"
+    android:textColor="@color/black"
+    android:layout_marginTop="45dp"/>
+    <TextView
+        android:id="@+id/waterIntakeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+        android:layout_centerHorizontal="true"
+        android:text="Water Intake: 0.0"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/fillButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/waterIntakeTextView"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#04A4A9"
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:text="SAVE"
+        android:textSize="25sp"
+        android:enabled="false"
+        android:soundEffectsEnabled="true"/>
+    <!-- 1-Liter Bottles -->
+    <LinearLayout
+        android:id="@+id/bottleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp">
+
+        <!-- 1-Liter Bottle 1 -->
+        <ImageView
+            android:id="@+id/bottle1"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:src="@drawable/empty_bottle"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:tag="1000"
+            tools:ignore="ContentDescription" />
+
+        <!-- 1-Liter Bottle 2 -->
+        <ImageView
+            android:id="@+id/bottle2"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:src="@drawable/empty_bottle"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:tag="1000"
+            tools:ignore="ContentDescription" />
+
+        <!-- 1-Liter Bottle 3 -->
+        <ImageView
+            android:id="@+id/bottle3"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:src="@drawable/empty_bottle"
+            android:scaleType="centerCrop"
+            android:tag="1000"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="250ML per Glass"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="265dp"/>
+    <!-- 250ml Glasses -->
+    <LinearLayout
+        android:id="@+id/glassContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_below="@id/bottleContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+    <!-- 250ml Glass 1 -->
+    <ImageView
+        android:id="@+id/glass1"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:src="@drawable/emptyglass"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="6dp"
+        android:tag="250"
+        tools:ignore="ContentDescription" />
+
+    <!-- 250ml Glass 2 -->
+    <ImageView
+        android:id="@+id/glass2"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:src="@drawable/emptyglass"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="6dp"
+        android:tag="250"
+        tools:ignore="ContentDescription" />
+
+    <!-- 250ml Glass 3 -->
+    <ImageView
+        android:id="@+id/glass3"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:src="@drawable/emptyglass"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="6dp"
+        android:tag="250"
+        tools:ignore="ContentDescription" />
+
+    <!-- 250ml Glass 4 -->
+    <ImageView
+        android:id="@+id/glass4"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:src="@drawable/emptyglass"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="6dp"
+        android:tag="250"
+        tools:ignore="ContentDescription" />
+
+    <!-- 250ml Glass 5 -->
+    <ImageView
+        android:id="@+id/glass5"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:src="@drawable/emptyglass"
+        android:scaleType="centerCrop"
+        android:tag="250"
+        tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</RelativeLayout>
