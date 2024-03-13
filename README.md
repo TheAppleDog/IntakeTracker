@@ -35,4 +35,6 @@ Frontend: Kotlin(android studio)<br>
 Database: DB Browser sqlite or install simplesqlitebrowser plugin in android studio itself</b><br>
 
 <b>Admin Access:</b><br>
-The platform also includes login access for administrators, allowing seamless management of food, exercise, and recipes to ensure a smooth user experience.
+The platform also includes login access for administrators, allowing seamless management of food, exercise, and recipes to ensure a smooth user experience.<br>1
+![image](https://github.com/TheAppleDog/IntakeTracker/assets/90033417/2a32758c-344a-4348-9363-1134b27de17f)
+
