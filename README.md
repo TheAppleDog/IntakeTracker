@@ -1,7 +1,7 @@
 <h3>Intake Tracker App</h3><br>
 <b>NOTE</b> : BEFORE CHANGING DEPENDENCIES VERSIONS COPY IT SOMEWHERE AS IT MAY OR MAY NOT EFFECT PROJECT. ALSO USE NEW ANDROID STUDIO VERSION WHENEVER THERE IS NEW UPDATE. USE PIXEL 5 API 22.<br>
 MAKE FONT SIZE IN YOU PHYSICAL DEVICE SMALLEST AND SCREEN ZOOM FULLY 0 IN SETTINGS. IF STILL TEXTS ARE OVERLAPPING SORRY TO SAY YOU HAVE TO CHANGE XML MARGINS, PADDINGS, ETC.<br><br>
-BEFORE USING GOOGLE SIGN IN OPTION FOLLOW THESE STEPS :
+BEFORE USING GOOGLE SIGN IN OPTION FOLLOW THESE STEPS :<br>
 1. Clone the Repo: Get the project code from your repository.<br>
 2. Open Project in Android Studio: Open the project in Android Studio.<br>
 3. Get SHA-1 Fingerprint: Use Android Studio to find the SHA-1 fingerprint (Gradle tab -> expand android -> double click signing report ).<br>
